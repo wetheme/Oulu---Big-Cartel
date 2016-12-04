@@ -1,4 +1,5 @@
-======Oulu for Big Cartel Readme======
+Oulu for Big Cartel Readme
+======
 
 Designed and Developed by WeTheme
 http://www.wetheme.com
