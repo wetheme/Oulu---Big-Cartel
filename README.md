@@ -1,7 +1,6 @@
 #Oulu for Big Cartel Readme#
 
-Designed and Developed by WeTheme
-http://www.wetheme.com
+*Designed and Developed by WeTheme [http://www.wetheme.com/](http://www.wetheme.com/)*
 
 ------------------------------------------------------------
 
