@@ -16,7 +16,7 @@ If you would like to purchase a theme with support, theme settings and heaps of 
 
 ------------------------------------------------------------
 
-__ You should only attempt to install this theme if you have advanced knowledge of HTML, CSS and JS. There is no support for this, or any of our other Big Cartel themes __
+**You should only attempt to install this theme if you have advanced knowledge of HTML, CSS and JS. There is no support for this, or any of our other Big Cartel themes**
 
 Installation Instructions:
 
