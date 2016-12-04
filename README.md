@@ -20,8 +20,9 @@ If you would like to purchase a theme with support, theme settings and heaps of 
 Installation Instructions:
 
 1. Select the 'Sexy' or 'Blocks' theme
-2. Copy/paste all of the files contained within the repo with the pages in your Big Cartel store
+2. Copy/paste all of the files contained within the repo to the pages in your Big Cartel store
 3. Fill in the settings at the top of the 'Home' and 'Layout' page
+4. Push any updates/improvements you make back here :)
 
 If you would like to purchase a theme with support, theme settings and heaps of features, please take a look at the range of Shopify themes on our website:
 
