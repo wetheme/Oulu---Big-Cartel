@@ -19,6 +19,20 @@ http://www.wetheme.com/shopify-themes/
 
 ------------------------------------------------------------
 
+** You should only attempt to install this theme if you have advanced knowledge of HTML, CSS and JS. There is no support for this, or any of our other Big Cartel themes **
+
+Installation Instructions:
+
+1. Select the 'Sexy' or 'Blocks' theme
+2. Copy/paste all of the files contained within the repo with the pages in your Big Cartel store
+3. Fill in the settings at the top of the 'Home' and 'Layout' page
+
+If you would like to purchase a theme with support, theme settings and heaps of features, please take a look at the range of Shopify themes on our website:
+
+http://www.wetheme.com/shopify-themes/
+
+------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2016 WeTheme.
