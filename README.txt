@@ -11,7 +11,9 @@ http://www.wetheme.com
 
 Oulu is now an open source theme, released under the MIT license (details below).
 
-There is no support for this theme. If you would like to purchase a theme with support, theme settings, and heaps of features, please take a look at the range of Shopify themes on our website:
+There is no support for this theme.
+
+If you would like to purchase a theme with support, theme settings and heaps of features, please take a look at the range of Shopify themes on our website:
 
 http://www.wetheme.com/shopify-themes/
 
