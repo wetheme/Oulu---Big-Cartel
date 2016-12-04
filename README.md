@@ -1,8 +1,8 @@
 #Oulu for Big Cartel Readme#
 
-*Designed and Developed by WeTheme [http://www.wetheme.com/](http://www.wetheme.com/)*
+Designed and Developed by WeTheme [http://www.wetheme.com/](http://www.wetheme.com/)
 
-------------------------------------------------------------
+##Overview##
 
 Oulu is now an open source theme, released under the MIT license (details below).
 
@@ -12,7 +12,7 @@ If you would like to purchase a theme with support, theme settings and heaps of 
 
 [http://www.wetheme.com/shopify-themes/](http://www.wetheme.com/shopify-themes/)
 
-------------------------------------------------------------
+##Installation##
 
 **You should only attempt to install this theme if you have advanced knowledge of HTML, CSS and JS. There is no support for this, or any of our other Big Cartel themes**
 
@@ -27,7 +27,7 @@ If you would like to purchase a theme with support, theme settings and heaps of 
 
 [http://www.wetheme.com/shopify-themes/](http://www.wetheme.com/shopify-themes/)
 
-------------------------------------------------------------
+##License##
 
 MIT License
 
