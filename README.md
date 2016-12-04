@@ -14,9 +14,7 @@ If you would like to purchase a theme with support, theme settings and heaps of 
 
 ##Installation##
 
-**You should only attempt to install this theme if you have advanced knowledge of HTML, CSS and JS. There is no support for this, or any of our other Big Cartel themes**
-
-Installation Instructions:
+**You should only attempt to install this theme if you have advanced knowledge of HTML, CSS and JS. There is no support for this, or any of our other Big Cartel themes.**
 
 1. Select the 'Sexy' or 'Blocks' theme
 2. Copy/paste all of the files contained within the repo to the pages in your Big Cartel store
