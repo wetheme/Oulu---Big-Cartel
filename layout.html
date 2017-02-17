@@ -30,104 +30,104 @@
 
 <!DOCTYPE html>
   <head>
-  
+
 	    <title>{{ store.name }} &mdash; {{ page.name }}</title>
 
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 	    <meta name="description" content="{{ page.meta_description }}">
 	    <meta name="keywords" content="{{ page.meta_keywords }}">
-	    
+
 	    {% if page.permalink == 'product' %}
-	    
+
 	    <meta property="og:title" content="{{ product.name | escape }}" />
 	    <meta property="og:description" content="{{ product.description | truncatewords: 50 }}" />
 	    <meta property="og:url" content="{{ store.url }}{{ product.url }}" />
 	    <meta property="og:site_name" content="{{ store.name }}" />
 	    <meta property="og:price:amount" content="{{ product.default_price }}" />
 		<meta property="og:image" content="{{ product.image | product_image_url | escape }}">
-		
+
 		{% endif %}
 
 		<!-- Latest compiled and minified CSS -->
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">		
-		<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">				
-		<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" >		
-		
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" >
+
 	    <link href="{{ theme | theme_css_url }}" media="screen" rel="stylesheet" type="text/css">
-	    
+
 	    <!-- Google Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300,400italic,900' rel='stylesheet' type='text/css'>
-	    
+
 		<!-- JS -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>	
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.0.0/ekko-lightbox.min.js"></script>
-	    <script src="//cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script> 
+	    <script src="//cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/sidr/2.2.1/jquery.sidr.min.js"></script>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.18/jquery.zoom.min.js"></script>
-		
+
 		<script type="text/javascript" charset="utf-8">
-		          
+
 			// Zoom
-		
+
 			$(document).ready(function(){
-			  $('.featured-image-div').zoom();		
+			  $('.featured-image-div').zoom();
 			  $('a.image-swap').click(function() {
 			    var newImage = $(this).attr('href');
-			    $( '.featured-image-div img' ).attr({ src: newImage }); 
+			    $( '.featured-image-div img' ).attr({ src: newImage });
 			    return false;
 			  });
-			  
+
 			});
-			
+
 			// Shopping Cart jQuery popup
-			
+
 			$(document).ready(function () {
 			    $('.show-shopping-cart').click(function (e) {
 			        $("#minicart").slideToggle();
 			    });
 			});
-			
+
 			// 4 items on each row
 			$(function(){
 				var ul = $("ul.product-grid");
 				ul.find("li:nth-child(4n-3)").addClass("alpha clearcolumn");
 				ul.find("li:nth-child(4n)").addClass("omega");
 			});
-			
+
 			// Lightbox
-			
-			$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
-			
+
+			$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); });
+
 			// Sidr Menu
-			
+
 			$(document).ready(function() {
 				$('#simple-menu').sidr({
 					side: 'right'
 				});
 			});
-			
+
 			// Instagram
-			
+
 			$(document).ready(function() {
 				$(".fancybox-instagram").fancybox({
 					padding : 0
 				});
 			});
-			
+
 			$(document).ready(function() {
 				$(".cart-launch").fancybox();
-				$('.wetheme-product-options select').selectpicker();	
+				$('.wetheme-product-options select').selectpicker();
 			});
-		          
+
 			$(window).load(function() {
 				$('.flexslider').flexslider({
 					animation: "slide",
@@ -135,17 +135,17 @@
 					controlNav: false
 				});
 			});
-			
+
 			jQuery(document).ready(function($){
 				var isLateralNavAnimating = false;
-				
+
 				//open/close lateral navigation
 				$('.cd-nav-trigger').on('click', function(event){
 					event.preventDefault();
-					//stop if nav animation is running 
+					//stop if nav animation is running
 					if( !isLateralNavAnimating ) {
-						if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-						
+						if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true;
+
 						$('body').toggleClass('navigation-is-open');
 						$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 							//animation is over
@@ -154,33 +154,33 @@
 					}
 				});
 			});
-			
+
 			$(function() {
 			    $('.wetheme-head-match-height').matchHeight();
 			});
-		
-			
+
+
 		</script>
 
 		{{ head_content }}
-		
+
 	</head>
 
 <body id="{{ page.permalink }}" class="{{ page.category }}">
-	
+
 <main>
-  
+
 <header>
 
 <div class="wetheme-header-block">Free USA Standard Delivery on orders over $50</div>
 
 	<div class="container-fluid">
 		<div class="row">
-			
+
 			<div class="wetheme-head-match-height col-md-3 col-sm-12 col-xs-12" id="oulu-logo-wrapper">
-			
+
 				<div class="oulu-header-spacing">
-				
+
 					<a href="/" title="{{ store.name | escape }}">
 					    {% if theme.image != blank %}
 					    <img src="{{ theme.image.url }}" alt="{{ store.name | escape }}” class=“logo-image" />
@@ -188,43 +188,43 @@
 					    <h2>{{ store.name }}</h2>
 					    {% endif %}
 					</a>
-			
+
 				</div>
-			
+
 			</div>
-		
-		
+
+
 			<div class="wetheme-head-match-height col-md-9 col-sm-12 col-xs-12" id="oulu-top-nav-wrapper">
-			
+
 				<div class="oulu-header-spacing wetheme-centre-nav">
-				
+
 					<ul class="oulu-top-nav">
-					
+
 						<li><a href="/">Home</a>
 						{% for category in categories.active %}
 							<li>{{ category | link_to }}</li>
 						{% endfor %}
 			    	  	<li class="oulu-header-cart{% if cart.item_count > 0 %} wetheme-cart-not-empty{% endif %}"><a href="/cart"><i class="fa fa-shopping-cart fa-lg"></i>Cart {% if cart.item_count > 0 %}<strong>{{ cart.item_count }}</strong>{% endif %}</a></li>
-					
+
 						<li class="header-search-wrapper">
 				      		<form id="search_form" name="search" action="/products" method="get" class="form-inline">
 					      		<input id="search_words" class="form-control" name="search" type="text" value="Search..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
 				    	  	</form>
 			    	  	</li>
-			    	  	
+
 			    	</ul>
-			    	
+
 			    </div>
-	    	  	
+
 	      	</div>
-	      	
-		</div><!-- .row -->	
+
+		</div><!-- .row -->
 	</div><!-- .container -->
 </header>
-    
 
 
-    
+
+
       <section class="content container-fluid">
       	<div class="row">
       		<div class="col-md-12">
@@ -250,23 +250,23 @@
           {{ page_content }}
         {% endif %}
       </section>
-      
+
 
 <div id="oulu-footer-wrapper">
     <footer>
-    
+
     <div class="container">
-    
+
 	    <div class="row">
 
             <div class="col-md-4 col-sm-4">
-			        
-	        {% if show-mailchimp-footer-block == 'yes' %} 
-	            
+
+	        {% if show-mailchimp-footer-block == 'yes' %}
+
 	        	    <h2>
 	        	    {% if mailchimp-header != empty %}
 	        	    	{{ mailchimp-header }}
-	        	    {% else %}	
+	        	    {% else %}
 	        	    	Join Our Mailing List
 	        	    {% endif %}
 	        	    </h2>
@@ -276,96 +276,96 @@
 	        	    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success" style="margin-bottom: 40px;">
 	        	    	</form>
 	        	    </div>
-	            	            
-	        {% endif %}	
-	        
-            </div>	        
-		    
+
+	        {% endif %}
+
+            </div>
+
 		    <div class="col-md-4 col-sm-4 wetheme-footer-links">
-		    
+
 		    	<h2>
 		    	{% if links-header != empty %}
 		    		{{ links-header }}
-		    	{% else %}	
+		    	{% else %}
 			    	Links
 			    {% endif %}
 		    	</h2>
-		    	
+
 		    	<ul>
-		    	
-		    		<li>{{ pages.home | link_to }}</li>    						
+
+		    		<li>{{ pages.home | link_to }}</li>
 		    		{% for page in pages.all %}
 		    			<li>{{ page | link_to }}</li>
-		    		{% endfor %}  	
-		    		<li><a href="/contact">Contact Us</a></li>    				    				    				    		
-		    	
+		    		{% endfor %}
+		    		<li><a href="/contact">Contact Us</a></li>
+
 		    	</ul>
-		    
+
 		    </div>
-		    
-		    
+
+
 		    <div class="col-md-4 col-sm-4" id="sm-icons">
-		    
-		    
-		    
-		    
-		    
+
+
+
+
+
 		    	<h2>
 		    	{% if social-media-header != empty %}
 		    		{{ social-media-header }}
-		    	{% else %}	
+		    	{% else %}
 		    		Social Media
 		    	{% endif %}
 		    	</h2>
-		    
+
 			    <ul>
-			    
-			    {% if show-facebook-icon == 'yes' %}	
-				    <li>
-				    <a href="{{ facebook-url }}">
-				    	<img src="http://wetheme.s3.amazonaws.com/smi/facebook.png" />
-				    </a>
-				    </li>
-				{% endif %}				    
-				
-			    {% if show-twitter-icon == 'yes' %}
-				    <li>
-				    <a href="{{ twitter-url }}">
-				    	<img src="http://wetheme.s3.amazonaws.com/smi/twitter.png" />
-				    </a>
-				    </li>   	
-				{% endif %}			
-				
-			    {% if show-tumblr-icon == 'yes' %}						
-				    <li>
-				    <a href="{{ tumblr-url }}">
-				    	<img src="http://wetheme.s3.amazonaws.com/smi/tumblr.png" />
-				    </a>
-				    </li>  	
-				{% endif %}			
 
-			    {% if show-pinterest-icon == 'yes' %}					    
-				    <li>
-				    <a href="{{ pinterest-url }}">
-				    	<img src="http://wetheme.s3.amazonaws.com/smi/pinterest.png" />
-				    </a>
-				    </li>
-				{% endif %}			
+            {% if show-facebook-icon == 'yes' %}
+          				    <li>
+          				    <a href="{{ facebook-url }}">
+          				    	<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          				    </a>
+          				    </li>
+          				{% endif %}
 
-			    {% if show-instagram-icon == 'yes' %}	
-				    <li>
-				    <a href="{{ instagram-url }}">
-				    	<img src="http://wetheme.s3.amazonaws.com/smi/instagram.png" />
-				    </a>
-				    </li>
-				{% endif %}			
-			    
+          			    {% if show-twitter-icon == 'yes' %}
+          				    <li>
+          				    <a href="{{ twitter-url }}">
+          				    	<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          				    </a>
+          				    </li>
+          				{% endif %}
+
+          			    {% if show-tumblr-icon == 'yes' %}
+          				    <li>
+          				    <a href="{{ tumblr-url }}">
+          				    	<i class="fa fa-tumblr fa-2x" aria-hidden="true"></i>
+          				    </a>
+          				    </li>
+          				{% endif %}
+
+          			    {% if show-pinterest-icon == 'yes' %}
+          				    <li>
+          				    <a href="{{ pinterest-url }}">
+          				    	<i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+          				    </a>
+          				    </li>
+          				{% endif %}
+
+          			    {% if show-instagram-icon == 'yes' %}
+          				    <li>
+          				    <a href="{{ instagram-url }}">
+          				    	<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+          				    </a>
+          				    </li>
+          				{% endif %}
+
 			    </ul>
-		    
+
 		    </div>
-	    
+
 	    </div>
-	    
+
 	</div>
 
 <div class="wetheme" style="width: 100%; text-align: center;">
@@ -379,7 +379,7 @@
 
 </main>
 
-	<a href="#cd-nav" class="cd-nav-trigger">Menu 
+	<a href="#cd-nav" class="cd-nav-trigger">Menu
 		<span class="cd-nav-icon"></span>
 
 		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
@@ -390,7 +390,7 @@
 	<div id="cd-nav" class="cd-nav">
 		<div class="cd-navigation-wrapper">
 			<div class="cd-half-block">
-				
+
 				<h2>Your Bag</h2>
 
 				<nav>
@@ -399,24 +399,24 @@
 						<h4><span class="cart-item-count">{{ cart.item_count }}</span></h4>
 						<span class="cart-item-count-text">items in your cart</span>
 						</li>
-						
+
 						<li class="jetset-cart-drawer--cart-total">
-						<h4><span class="cart-item-price">{{ cart.total | money_with_sign }}</span></h4>						
+						<h4><span class="cart-item-price">{{ cart.total | money_with_sign }}</span></h4>
 						<span class="cart-item-price-text">total cart value</span>
 						</li>
-						
+
 						<li class="jetset-cart-drawer--checkout-button">
 						<a href="/cart" class="btn btn-success">Review</a>
 						</li>
-						
+
 					</ul>
 				</nav>
 			</div><!-- .cd-half-block -->
-			
+
 			<div class="cd-half-block">
-			
+
 			<h2>Categories</h2>
-			
+
 			<ul class="cd-primary-nav">
 			{% for category in categories.active %}
 				<li>{{ category | link_to }}</li>
@@ -424,19 +424,19 @@
 			</ul>
 
 			<h2 style="margin-top: 3.4em;">Navigation</h2>
-			
+
 					<ul class="cd-primary-nav">
-						<li>{{ pages.home | link_to }}</li>    						
+						<li>{{ pages.home | link_to }}</li>
 						{% for page in pages.all %}
 							<li>{{ page | link_to }}</li>
-						{% endfor %}    							
+						{% endfor %}
 						<li><a href="/contact">Contact Us</a></li>
-					</ul>												
+					</ul>
 
-					
+
 			</div> <!-- .cd-half-block -->
 		</div> <!-- .cd-navigation-wrapper -->
 	</div> <!-- .cd-nav -->
-    
+
   </body>
 </html>

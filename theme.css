@@ -33,7 +33,6 @@ ii. Responsive Overrides
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 
-
 /* Browser Resets
 *********************************/
 .flex-container a:active,
@@ -109,12 +108,10 @@ html[xmlns] .slides {display: block;}
     z-index: 99999;
 }
 .flex-direction-nav a.flex-prev {
-    background: url("http://wetheme.s3.amazonaws.com/unico/slider-arrows.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     left: 0;
     margin: 0 0 0 -40px;
 }
 .flex-direction-nav a.flex-next {
-    background: url("http://wetheme.s3.amazonaws.com/unico/slider-arrows.png") repeat scroll 0 100% rgba(0, 0, 0, 0);
     margin: 0 -40px 0 0;
     right: 0;
 }
@@ -142,11 +139,11 @@ html[xmlns] .slides {display: block;}
  *
  * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
  */.ekko-lightbox-container{position:relative}.ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}.ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}.ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}.ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}.ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}.ekko-lightbox .modal-footer{text-align:left}
- 
+
  .ekko-lightbox .modal-header{
  	display: none;
  }
- 
+
  /* @end */
 
 /* @group 5. Zoomie */
@@ -539,7 +536,7 @@ header #header-menu-bars{
     padding-bottom: 5px;
     margin-top: 0;
     margin-bottom: 0;
-}	
+}
 
 .wetheme-collection-product-price{
 	font-size: 20px;
@@ -704,6 +701,7 @@ footer #sm-icons ul li,
 footer #payment-icons ul li{
 	display: inline-block;
 	float: none;
+  margin-right: 10px;
 }
 
 footer #payment-icons ul li{
@@ -949,7 +947,7 @@ ul#cart_contents li{
 
 #cart-wrapper .row{
 	margin-top: 20px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 #cart-wrapper h2{
@@ -1030,8 +1028,8 @@ ul.pages-sidebar li{
 .cloud-zoom-lens {
 	border: 4px solid #888;
 	margin:-4px;	/* Set this to minus the border thickness. */
-	background-color:#fff;	
-	cursor:move;		
+	background-color:#fff;
+	cursor:move;
 }
 
 /* This is for the title text. */
@@ -1041,7 +1039,7 @@ ul.pages-sidebar li{
 	color:#fff;
 	padding:3px;
 	width:100%;
-	text-align:center;	
+	text-align:center;
 	font-weight:bold;
 	font-size:10px;
 	top:0px;
@@ -1056,7 +1054,7 @@ ul.pages-sidebar li{
 
 /* This is the loading message. */
 .cloud-zoom-loading {
-	color:white;	
+	color:white;
 	background:#222;
 	padding:3px;
 	border:1px solid #000;
@@ -1133,7 +1131,7 @@ a:focus{
 }
 
 .homepage-image-1{
-	
+
 }
 
 .homepage-image-2{
@@ -1151,11 +1149,11 @@ a:focus{
 	animation-delay: 0.5s;
     animation-duration: 1s;
 }
- 
+
 #mc_embed_signup{
  	text-align: center;
  }
- 
+
 #mc_embed_signup #mc-embedded-subscribe{
 	margin-top: 10px;
 }
@@ -1269,7 +1267,7 @@ footer .row{
     text-align: center;
     vertical-align: baseline;
     white-space: nowrap;
-}   
+}
 
 .product-grid .label{
 	font-size: 14px;
@@ -1425,7 +1423,7 @@ a:focus{
   top: 0;
   left: 0;
   padding: 50px 20px;
-  margin-top: 20%;  
+  margin-top: 20%;
 }
 
 .hovereffect img {
@@ -1564,88 +1562,88 @@ section.content{
 
 
 	@media only screen and (min-width: 993px) and (max-width: 1200px) {
-	
+
 	.product-page-1, .product-page-2, .product-page-3{
 		margin-top: 0;
 	}
-	
+
 	}
 
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 992px) {
-	
+
 	.loka-hp-adverts div{
 		margin: 10px;
 	}
-	
+
 	#search-box{
 		text-align: center;
 		margin-bottom: 30px;
 	}
-	
+
 	#search-box input{
 		display: inline-block;
 	}
-	
+
 	header #cart-header{
 		text-align: left;
 	}
-	
+
 	.oulu-homepage-categories-list{
 		text-align: center;
 		margin-bottom: 40px;
 	}
-	
+
 	#product-grid-wrapper li{
 		margin-bottom: 40px;
 	}
-	
-	
+
+
 	header{
 		position: relative;
 	}
-	
-	
+
+
 	#oulu-top-nav-wrapper{
 		display: none;
 	}
-	
-	
+
+
 	#oulu-logo-wrapper{
 		text-align: center;
 	}
-	
-	
+
+
 	.cd-nav-trigger{
 		display: block;
 	}
-	
-				/* -------------------------------- 
-				
+
+				/* --------------------------------
+
 				Primary style
-				
+
 				-------------------------------- */
 				*, *::after, *::before {
 				  -webkit-box-sizing: border-box;
 				  -moz-box-sizing: border-box;
 				  box-sizing: border-box;
 				}
-				
+
 				html * {
 				  -webkit-font-smoothing: antialiased;
 				  -moz-osx-font-smoothing: grayscale;
 				}
-				
+
 				body, html {
 				  /* prevent horizontal scrolling */
 				  overflow-x: hidden;
 				}
-				
-				/* -------------------------------- 
-				
-				Main Components 
-				
+
+				/* --------------------------------
+
+				Main Components
+
 				-------------------------------- */
 				main {
 				  position: relative;
@@ -1678,7 +1676,7 @@ section.content{
 				  -o-transform: translateX(100%);
 				  transform: translateX(100%);
 				}
-				
+
 				.cd-nav-trigger {
 				  position: fixed;
 				  z-index: 3;
@@ -1817,7 +1815,7 @@ section.content{
 				  .cd-nav-trigger {
 				    top: 40px;
 				  }
-				
+
 				.cd-nav {
 				  position: fixed;
 				  color: #fff;
@@ -1900,13 +1898,13 @@ section.content{
 				  margin-top: 60px;
 				  padding-left: 0;
 				}
-				
+
 				.cd-nav .cd-primary-nav a,
 				.cd-nav .cd-primary-nav a:hover,
 				.cd-nav .cd-primary-nav a:active{
 					color: #fff;
-				}				
-				
+				}
+
 				.cd-nav .cd-primary-nav li {
 				  margin: 1.6em 0;
 				  list-style-type: none;
@@ -1938,12 +1936,12 @@ section.content{
 				.cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
 				  font-size: 1.6rem;
 				}
-				
+
 				.no-js main {
 				  height: auto;
 				  overflow: visible;
 				}
-				
+
 				.no-js .cd-nav {
 				  position: static;
 				  visibility: visible;
@@ -1959,72 +1957,72 @@ section.content{
 				  transform: translateX(0);
 				}
 
-	
+
 	.custom, #contact, #cart, #products, #product{
 		margin-top: 0 !important;
 	}
-	
+
 	.wetheme-contact-text{
 		margin-bottom: 50px;
 	}
-	
+
 	ul.product-grid li{
 		margin-bottom: 50px;
 	}
-	
+
 	.wetheme-product-description, .wetheme-product-options{
 		width: 100% !important;
 	}
-	
+
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-	
+
+
 	.wetheme-footer-links li{
 		width: 100%;
 	}
-	
+
 	#mc-embedded-subscribe-form .btn{
 		margin-top: 20px;
 	}
-	
+
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 
-	
+
 	.oulu-header-spacing{
 		text-align: center;
 	}
-	
+
 	.header-search-wrapper{
 		width: 100%;
 		text-align: center;
 		margin-left: 0 !important;
 		margin-top: 30px;
-	}	
+	}
 
-	
+
 	footer{
 		text-align: center;
 	}
-	
+
 	footer h2{
 		text-align: center;
 	}
-	
+
 	footer .col-md-4{
 		margin-bottom: 50px;
 	}
-	
+
 	}
 
 
 
-/* @end */ 
+/* @end */
 
 
 /*
@@ -2144,4 +2142,3 @@ Please refer to the help doc (PDF) for instructions on changing these values
 .item_price{
 	text-align: left;
 }
-
